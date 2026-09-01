@@ -13,6 +13,11 @@
         .bg-braspress-orange { background-color: #FF7300; }
         .hover-bg-orange:hover { background-color: #e66700; }
         .border-braspress-orange { border-color: #FF7300; }
+        
+        /* Garantindo que o texto não quebre ou se separe indesejadamente */
+        .brand-name {
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -24,9 +29,8 @@
             <!-- ÁREA DA LOGO -->
             <div class="flex items-center">
                 <a href="index.html" class="flex items-center">
-                    <!-- A imagem será buscada na mesma pasta do index.html -->
                     <img src="logo.png" alt="Logo Braspress" class="h-10 w-auto object-contain">
-                    <span class="ml-2 text-xl font-bold text-braspress-blue tracking-tight">
+                    <span class="ml-2 text-xl font-bold text-braspress-blue tracking-tight brand-name">
                         BRAS<span class="text-braspress-orange">PRESS</span>
                     </span>
                 </a>
@@ -78,7 +82,7 @@
                 </li>
             </ul>
 
-            <!-- BOTÃO DE DOWNLOAD (DIRETO PARA O APK NA MESMA PASTA) -->
+            <!-- BOTÃO DE DOWNLOAD -->
             <a href="braspress.apk" class="block w-full bg-braspress-orange text-white text-center font-bold py-4 rounded-xl shadow-lg hover-bg-orange transition duration-300 transform hover:-translate-y-1 uppercase tracking-wide">
                 Baixar Aplicativo Agora
             </a>
